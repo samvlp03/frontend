@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { Pencil, Mail } from "lucide-react";
+
+import { Mail } from "lucide-react";
 import { FaUser, FaLock, FaPhone, FaBriefcase, FaVenusMars } from "react-icons/fa";
 import { useAuth } from "../context/AuthContext";
 import PropTypes from "prop-types";

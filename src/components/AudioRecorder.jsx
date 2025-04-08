@@ -31,7 +31,6 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
             body: formData,
         });
 
-        // if (!response.ok) throw new Error("Upload failed");
         console.log(response);
         const result = await response.json();
         console.log("Upload success:", result.status);
@@ -165,7 +164,9 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
       )}
 
       {audioUrl && (
-        <audio ref={audioRef} src={audioUrl} controls className="w-full mt-2" />
+        <audio ref={audioRef} src={audioUrl} controls className="w-full mt-2">
+          <track kind="captions" srcLang="en" label="English captions" />
+        </audio>
       )}
 
       {error && (

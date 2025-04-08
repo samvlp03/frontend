@@ -31,7 +31,7 @@ const VideoFeed = ({ status }) => {
         stream.getTracks().forEach(track => track.stop());
       }
     };
-  }, []);
+  },);
 
   return (
     <div className="relative h-full w-full bg-black rounded-lg overflow-hidden">

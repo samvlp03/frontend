@@ -8,7 +8,7 @@ import { uploadAudio } from '../services/api';
 
 const Diagnose = () => {
   const [isCameraOn, setIsCameraOn] = useState(false);
-  const [audioBlob, setAudioBlob] = useState(null);
+  const [audioBlob] = useState(null);
   const [isDiagnosing, setIsDiagnosing] = useState(false);
   const navigate = useNavigate();
 
