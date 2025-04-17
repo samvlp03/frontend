@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
-
+import {useAuth}from '../context/AuthContext';
 
 const Welcome = () => {
 
   const navigate = useNavigate();
+  const {user} = useAuth();
 
   return (
     <div className="bg-white text-gray-800">
@@ -27,7 +28,7 @@ const Welcome = () => {
           </p>
           <button
             className="mt-4 px-6 py-3 bg-[#7b3476] text-white font-medium rounded hover:bg-[#3d1571] transition duration-300 shadow-md cursor-pointer"
-            onClick={() => navigate('/login')}>
+            onClick={() => user ? (navigate('/diagnose')) : (navigate('/login'))}>
             Get Started
           </button>
         </div>

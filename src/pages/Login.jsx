@@ -172,8 +172,6 @@ export default function SlidingAuth() {
                   />
                 </div>
 
-                {/* {formData.username = formData.email} */}
-
                 <div className="w-full mb-4">
                   <input
                     type="tel"
@@ -191,9 +189,9 @@ export default function SlidingAuth() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+              className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition cursor-pointer"
             >
-              {isLoading ? "Please wait..." : isLogin ? "Login" : "Sign Up"}
+              {isLoading ? "Please wait..." : (isLogin ? "Login" : "Sign Up")}
             </button>
           </form>
 

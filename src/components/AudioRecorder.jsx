@@ -33,8 +33,9 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
 
         console.log(response);
         const result = await response.json();
-        console.log("Upload success:", result.status);
+        console.log("Upload success:", result.message);
         setUploadStatus("Upload successful!");
+        return result.filename;
     } catch (err) {
         console.error("Audio upload error:", err);
         setUploadStatus("Upload failed. Please try again.");
@@ -65,7 +66,7 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
         }
       };
 
-      mediaRecorderRef.current.onstop = () => {
+      mediaRecorderRef.current.onstop = async () => {
         if (audioChunksRef.current.length === 0) {
           setError("No audio data recorded.");
           return;
@@ -75,8 +76,10 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
         });
         const url = URL.createObjectURL(audioBlob);
         setAudioUrl(url);
-        onRecordComplete(audioBlob);
-        uploadAudioToBackend(audioBlob);
+        const filename = await uploadAudioToBackend(audioBlob);
+        if (filename) {
+          onRecordComplete(audioBlob, filename); // Pass filename
+        }
       };
 
       mediaRecorderRef.current.start(100);

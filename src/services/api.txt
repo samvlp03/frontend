@@ -1,0 +1,33 @@
+export const uploadAudio = async (audioBlob) => {
+  const formData = new FormData();
+  formData.append('file', audioBlob, 'recording.wav');
+
+  try {
+    const response = await api.post('/upload-audio/', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Audio upload failed:', error);
+    throw error;
+  }
+};
+
+export const analyzeAudioAndText = async (audioBlob) => {
+  const formData = new FormData();
+  formData.append('file', audioBlob, 'recording.wav');
+
+  try {
+    const response = await api.post('/analysis/audio/', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Diagnosis failed:', error);
+    throw error;
+  }
+};

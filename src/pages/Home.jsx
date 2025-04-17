@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-blue-100 to-purple-200">
       <h1 className="text-5xl font-bold mb-4 text-blue-800">EquinoxMind</h1>

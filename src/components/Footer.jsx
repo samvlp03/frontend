@@ -1,19 +1,24 @@
-import {Facebook, Instagram, Linkedin, TwitterIcon, } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, TwitterIcon, } from 'lucide-react'
 
 
 const Footer = () => {
   return (
-    <footer className="text-gray-300 py-10">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <footer className="absolute text-gray-300 py-10 mb-0 px-24 mt-28">
+      <div className="max-w-10xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
 
         {/* Branding Section */}
         <div>
-          <h2 className="text-2xl font-bold text-white">EquinoxMind</h2>
+          <div className="text-2xl font-bold flex gap-2 items-center">
+            <img src="./logo.png" height="24px" width="24px" alt="logo" />
+            <div>
+              Equinox <span>Mind</span>
+            </div>
+          </div>
           <p className="text-sm mt-2">AI-Powered Mental Health Support System</p>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col ml-8 space-y-2">
           <a href="/" className="hover:text-white">Home</a>
           <a href="/about" className="hover:text-white">About</a>
           <a href="/contact" className="hover:text-white">Contact</a>

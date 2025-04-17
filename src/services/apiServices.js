@@ -1,16 +1,17 @@
 import api from './api';
 
+
 const apiServices = {
   // Authentication
   login: (credentials) => api.post('/login/', credentials),
   register: (data) => api.post('/register/', data),
-  // refreshToken: (refresh) => api.post('/token/refresh/', { refresh }),
-  // verifyToken: (token) => api.post('/token/verify/', { token }),
 
   // Analysis
   analyzeAudioAndText: (data) => api.post('/analysis/audio/', data),
+  analyzeUploadedAudio: (filename) => api.get(`/analysis/audio/${filename}/`),
   analyzeVisual: (data) => api.post('/analysis/visual/', data),
-  saveAnalysis: (data) => api.post('/analysis/save/', data),
+  saveAnalysis: (data) => api.post('/save/', data),
+  analyzeChatText: (data) => api.post('/analysis/chat-text/', data),
 
   // Video-related
   startVideoProcessing: () => api.post('/video/start/'),
@@ -18,7 +19,7 @@ const apiServices = {
   getVideoStatus: () => api.get('/video/status/'),
 
   // Reports
-  getReports: () => api.get('/reports/'),
+  getReports: (config) => api.get('/user-reports/', config),
   getReport: (id) => api.get(`/reports/${id}/`),
   downloadReport: (id) => api.get(`/reports/${id}/download/`, { responseType: 'blob' }),
 

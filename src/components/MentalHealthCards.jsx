@@ -52,7 +52,7 @@ const MentalHealthCards = () => {
 const MentalHealthCard = ({ title, image, description, helpLink }) => {
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex">
-            <div className="relative w-1/4 h-[100%] flex-shrink-0 ">
+            <div className="relative w-1/4 h-[110%] flex-shrink-0 ">
                 <img
                     className="object-cover w-full h-full"
                     src={image}

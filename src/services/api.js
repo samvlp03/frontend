@@ -55,21 +55,4 @@ api.interceptors.response.use(
   }
 );
 
-export const uploadAudio = async (audioBlob) => {
-  const formData = new FormData();
-  formData.append('file', audioBlob, 'recording.wav');
-
-  try {
-    const response = await api.post('/upload-audio/', formData, {
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    });
-    return response.data;
-  } catch (error) {
-    console.error('Audio upload failed:', error);
-    throw error;
-  }
-};
-
 export default api;

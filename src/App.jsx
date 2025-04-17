@@ -1,5 +1,5 @@
 import './App.css'
-import {UserProfile, Footer, Navbar} from './components';
+import {UserProfile, Footer, Navbar, Layout} from './components';
 import Blogs from './pages/Blogs';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
@@ -37,6 +37,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path='/' element={<Welcome />} />
+      <Route path='/home' element={<Welcome />} />
       <Route path="/blogs" element={<Blogs/>} />
       
       <Route element={<ProtectedRoute />}>
