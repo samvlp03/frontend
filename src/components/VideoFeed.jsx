@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const VideoFeed = ({ videoRef, status, onStart, onStop, onAnalyze }) => {
+const VideoFeed = ({ videoRef, currentEmotion, confidence, onStart, onStop, onAnalyze }) => {
   return (
     <div className="mt-4 border rounded-xl p-4 shadow-lg">
       <div className="w-full flex justify-center">
@@ -34,32 +34,28 @@ const VideoFeed = ({ videoRef, status, onStart, onStop, onAnalyze }) => {
         </button>
       </div>
 
-      {status && (
-        <div className="mt-6 text-center">
-          <h3 className="text-lg font-semibold">
-            Detected Emotion: {status.current_emotion}
-          </h3>
-          <div className="w-full bg-gray-200 rounded-full h-4 mt-2 max-w-md mx-auto">
-            <div
-              className="bg-green-500 h-4 rounded-full transition-all duration-300"
-              style={{ width: `${(status.confidence * 100).toFixed(0)}%` }}
-            />
-          </div>
-          <p className="mt-1 text-sm text-gray-600">
-            Confidence: {(status.confidence * 100).toFixed(2)}%
-          </p>
+      <div className="mt-6 text-center">
+        <h3 className="text-lg font-semibold">
+          Detected Emotion: {currentEmotion}
+        </h3>
+        <div className="w-full bg-gray-200 rounded-full h-4 mt-2 max-w-md mx-auto">
+          <div
+            className="bg-green-500 h-4 rounded-full transition-all duration-300"
+            style={{ width: `${(confidence * 100).toFixed(0)}%` }}
+          />
         </div>
-      )}
+        <p className="mt-1 text-sm text-gray-600">
+          Confidence: {isNaN(confidence) ? "N/A" : (confidence * 100).toFixed(2)}%
+        </p>
+      </div>
     </div>
   );
 };
 
 VideoFeed.propTypes = {
   videoRef: PropTypes.object.isRequired,
-  status: PropTypes.shape({
-    current_emotion: PropTypes.string,
-    confidence: PropTypes.number,
-  }),
+  currentEmotion: PropTypes.string,
+  confidence: PropTypes.number,
   onStart: PropTypes.func.isRequired,
   onStop: PropTypes.func.isRequired,
   onAnalyze: PropTypes.func.isRequired,

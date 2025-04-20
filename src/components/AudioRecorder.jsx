@@ -23,7 +23,7 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
   const uploadAudioToBackend = async (audioBlob) => {
     setUploadStatus(null);
     const formData = new FormData();
-    formData.append("file", audioBlob, "recording.wav");
+    formData.append("file", audioBlob, "recording.webm");
 
     try {
         const response = await fetch("http://localhost:8000/API/upload-audio/", {
@@ -57,7 +57,9 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
         },
       });
 
-      mediaRecorderRef.current = new MediaRecorder(stream);
+      mediaRecorderRef.current = new MediaRecorder(stream, {
+        mimeType: "audio/webm",
+      });
       audioChunksRef.current = [];
 
       mediaRecorderRef.current.ondataavailable = (event) => {
@@ -72,7 +74,7 @@ const AudioRecorder = ({ onRecordComplete, disabled = false }) => {
           return;
         }
         const audioBlob = new Blob(audioChunksRef.current, {
-          type: "audio/wav",
+          type: "audio/webm",
         });
         const url = URL.createObjectURL(audioBlob);
         setAudioUrl(url);
