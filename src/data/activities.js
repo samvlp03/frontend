@@ -1,3 +1,4 @@
+// This component is responsible for displaying a list of activities.
 const activities = {
   "Depression": [
     {
@@ -171,215 +172,160 @@ const activities = {
     "id": "26",
     "title": "Exercise Regularly",
     "description": "Engage in light physical activities like walking or yoga.",
-    "img_url": "https://www.pexels.com/photo/person-running-on-treadmill-4050310/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1664478256604-52548c4af05a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXhlcmNpc2UlMjByZWd1bGFybHl8ZW58MHx8MHx8fDA%3D"
   },
   {
     "id": "27",
     "title": "Eat a Balanced Diet",
     "description": "Maintain a nutritious diet to support brain health and energy levels.",
-    "img_url": "https://www.pexels.com/photo/healthy-food-on-white-ceramic-plate-4050307/"
+    "img_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFsYW5jZWQlMjBkaWV0fGVufDB8fDB8fHww"
   },
   {
     "id": "28",
     "title": "Improve Sleep Hygiene",
     "description": "Follow a proper sleep schedule to improve cognitive function.",
-    "img_url": "https://www.pexels.com/photo/person-holding-smartphone-in-bed-4050311/"
+    "img_url": "https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNsZWVwJTIwaHlnaWVuZXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "29",
     "title": "Limit Social Media",
     "description": "Reduce screen time and exposure to triggering content.",
-    "img_url": "https://www.pexels.com/photo/person-holding-black-android-smartphone-4050300/"
+    "img_url": "https://images.unsplash.com/photo-1712331676372-2fc48f449c56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bm8lMjBzb2NpYWwlMjBtZWRpYXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "210",
     "title": "Engage in Creative Activities",
     "description": "Try painting, writing, or music to express emotions positively.",
-    "img_url": "https://www.pexels.com/photo/person-painting-on-canvas-4050303/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1676734031799-6a469993e475?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3JlYXRpdmUlMjBhY3Rpdml0aWVzfGVufDB8fDB8fHww"
   },
   {
     "id": "211",
     "title": "Track Thought Patterns",
     "description": "Journal thoughts to recognize triggers and patterns.",
-    "img_url": "https://www.pexels.com/photo/person-writing-in-journal-4050309/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1683491155621-cd42e847d646?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGpvdXJuYWx8ZW58MHx8MHx8fDA%3D"
   },
   {
     "id": "212",
     "title": "Set Small Goals",
     "description": "Achieve small tasks daily to boost confidence and motivation.",
-    "img_url": "https://www.pexels.com/photo/person-writing-to-do-list-4050308/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1705010662254-97e7d82cd182?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c21hbGwlMjBnb2Fsc3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "213",
     "title": "Avoid Substance Abuse",
     "description": "Stay away from alcohol and drugs to prevent worsening symptoms.",
-    "img_url": "https://www.pexels.com/photo/person-holding-white-ceramic-mug-while-sitting-on-bed-4050297/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1668487827037-7b88850dea9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHN1YnN0YW5jZSUyMGFidXNlfGVufDB8fDB8fHww"
   },
   {
     "id": "214",
     "title": "Develop Social Skills",
     "description": "Practice social interactions to strengthen relationships.",
-    "img_url": "https://www.pexels.com/photo/group-of-people-holding-hands-4050305/"
+    "img_url": "https://images.unsplash.com/photo-1567151993653-b471db6c2304?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHNvY2lhbCUyMHNraWxsc3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "215",
     "title": "Learn Stress Management",
     "description": "Adopt relaxation techniques like progressive muscle relaxation.",
-    "img_url": "https://www.pexels.com/photo/person-meditating-on-mountain-during-sunset-4050306/"
+    "img_url": "https://images.unsplash.com/photo-1559595500-e15296bdbb48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RyZXNzJTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "216",
     "title": "Practice Positive Affirmations",
     "description": "Challenge negative thoughts with positive self-talk.",
-    "img_url": "https://www.pexels.com/photo/person-holding-positive-affirmation-card-4050302/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1723619021737-df1d775eccc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UHJhY3RpY2UlMjBQb3NpdGl2ZSUyMEFmZmlybWF0aW9uc3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "217",
     "title": "Engage in Volunteering",
     "description": "Help others to build a sense of purpose and community.",
-    "img_url": "https://www.pexels.com/photo/group-of-people-holding-hands-4050305/"
+    "img_url": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RW5nYWdlJTIwaW4lMjBWb2x1bnRlZXJpbmd8ZW58MHx8MHx8fDA%3D"
   },
   {
     "id": "218",
     "title": "Improve Personal Hygiene",
     "description": "Maintain self-care habits to boost self-esteem and well-being.",
-    "img_url": "https://www.pexels.com/photo/person-holding-white-ceramic-mug-while-sitting-on-bed-4050297/"
+    "img_url": "https://images.unsplash.com/photo-1591610160225-861405867ba3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SW1wcm92ZSUyMFBlcnNvbmFsJTIwSHlnaWVuZXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "id": "219",
-    "title": "Build a Safety Plan",
-    "description": "Create a crisis plan with emergency contacts and coping strategies.",
-    "img_url": "https://www.pexels.com/photo/person-writing-to-do-list-4050308/"
-  },
-  {
-    "id": "220",
     "title": "Stay Hydrated",
     "description": "Drink enough water daily to maintain energy levels and focus.",
-    "img_url": "https://www.pexels.com/photo/person-holding-white-ceramic-mug-while-sitting-on-bed-4050297/"
+    "img_url": "https://plus.unsplash.com/premium_photo-1670426501176-d772b7bcca4d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aHlkcmF0aW9ufGVufDB8fDB8fHww"
   }
 ]
 ,
-
   "Panic Disorder": [
     {
       "id": "31",
       "title": "Deep Breathing Exercises",
       "description": "Practice diaphragmatic breathing to calm the nervous system.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://plus.unsplash.com/premium_photo-1725983651130-40bc371d5843?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RGVlcCUyMEJyZWF0aGluZyUyMEV4ZXJjaXNlc3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       "id": "32",
       "title": "Progressive Muscle Relaxation",
       "description": "Tense and release muscles to reduce panic symptoms.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://plus.unsplash.com/premium_photo-1663013066721-f8d0de45f927?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UHJvZ3Jlc3NpdmUlMjBNdXNjbGUlMjBSZWxheGF0aW9ufGVufDB8fDB8fHww"
     },
     {
       "id": "33",
       "title": "Mindfulness Meditation",
       "description": "Stay present in the moment to reduce anxiety and fear.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWluZGZ1bG5lc3MlMjBtZWRpdGF0aW9ufGVufDB8fDB8fHww"
     },
     {
       "id": "34",
       "title": "Cognitive Restructuring",
       "description": "Identify and challenge irrational panic-related thoughts.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1714632428564-1e5c44d67263?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZ25pdGl2ZSUyMHJlc3RydWN0dXJpbmd8ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "35",
       "title": "Journaling Panic Episodes",
       "description": "Track panic attacks to identify triggers and patterns.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1701206886407-6a1a3cf6c74d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGpvdXJuYWwlMjBwYW5pYyUyMGVwaXNvZGVzfGVufDB8fDB8fHww"
     },
     {
       "id": "36",
       "title": "Avoid Caffeine and Stimulants",
       "description": "Reduce caffeine intake to prevent unnecessary panic symptoms.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1674336771947-8bf8fadb7f70?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNhZmZlaW5lfGVufDB8fDB8fHww"
     },
     {
       "id": "37",
       "title": "Practice Visualization",
       "description": "Imagine calming scenarios to ease panic attacks.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZpc3VhbGl6YXRpb258ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "38",
       "title": "Regular Physical Exercise",
       "description": "Engage in daily movement to manage panic symptoms.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "39",
       "title": "Healthy Sleep Routine",
       "description": "Ensure 7-9 hours of sleep for better emotional regulation.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://images.unsplash.com/photo-1631310665125-b07e024f408d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2xlZXAlMjByb3V0aW5lfGVufDB8fDB8fHww"
     },
     {
       "id": "310",
       "title": "Hydration and Balanced Diet",
       "description": "Drink enough water and eat nutrient-rich foods for brain health.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://plus.unsplash.com/premium_photo-1708971732529-28f9a670de56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcmF0aW9uJTIwYW5kJTIwYmFsYW5jZWQlMjBkaWV0fGVufDB8fDB8fHww"
     },
     {
       "id": "311",
       "title": "Grounding Techniques",
       "description": "Use the 5-4-3-2-1 method to stay present and reduce panic.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://plus.unsplash.com/premium_photo-1666283137079-aa77f01e8fca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3JvdW5kaW5nJTIwZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "312",
-      "title": "Talk to a Support Person",
-      "description": "Share panic struggles with a trusted friend or therapist.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "313",
-      "title": "Establish a Relaxation Ritual",
-      "description": "Incorporate music, baths, or aromatherapy into daily routine.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "314",
-      "title": "Controlled Exposure Therapy",
-      "description": "Gradually face panic triggers in a controlled setting.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "315",
-      "title": "Reduce Screen Time",
-      "description": "Limit electronic device use to decrease stress and overstimulation.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "316",
-      "title": "Practice Self-Compassion",
-      "description": "Be kind to yourself and avoid self-criticism during recovery.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "317",
-      "title": "Create a Safety Plan",
-      "description": "Develop coping strategies for when a panic attack occurs.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "318",
-      "title": "Reduce Alcohol and Nicotine",
-      "description": "Limit substances that can increase anxiety and panic attacks.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "319",
-      "title": "Set Realistic Goals",
-      "description": "Break large tasks into small steps to avoid overwhelming stress.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
-    },
-    {
-      "id": "320",
       "title": "Laugh More",
       "description": "Engage in activities that bring joy and lighten your mood.",
-      "img_url": "https://www.himalayanyogaashram.com/wp-content/uploads/2019/11/yoga-for-stress-relief.jpg"
+      "img_url": "https://media.istockphoto.com/id/1447873870/photo/group-of-indian-senior-people-wearing-white-cloths-relaxing-and-laughing-together-outdoor-at.webp?a=1&b=1&s=612x612&w=0&k=20&c=YZNvDDoWh9S0VGkX308BBUtcKQoWtTwM3HZSuVazfSQ="
     }
   ],
   "Obsessive-Compulsive Disorder (OCD)": [
@@ -387,31 +333,31 @@ const activities = {
       "id": "40",
       "title": "Cognitive Behavioral Therapy (CBT) Exercise",
       "description": "Practice an exposure and response prevention (ERP) exercise to challenge obsessive thoughts.",
-      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMniz9-ZOcSyPAVjwIqZhbl4LjLLabnlnOEA&s"
+      "img_url": "https://plus.unsplash.com/premium_photo-1681911704030-e9f4fdf8f05a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q29nbml0aXZlJTIwQmVoYXZpb3JhbCUyMFRoZXJhcHklMjAoQ0JUKSUyMEV4ZXJjaXNlfGVufDB8fDB8fHww"
     },
     {
       "id": "41",
       "title": "Mindfulness Meditation",
       "description": "Engage in a guided mindfulness meditation to stay present and reduce compulsive behaviors.",
-      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMniz9-ZOcSyPAVjwIqZhbl4LjLLabnlnOEA&s"
+      "img_url": "https://images.unsplash.com/photo-1592895792095-85fa785192a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1pbmRmdWxuZXNzJTIwbWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       "id": "42",
       "title": "Journaling",
       "description": "Write down your intrusive thoughts and analyze them rationally.",
-      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMniz9-ZOcSyPAVjwIqZhbl4LjLLabnlnOEA&s"
+      "img_url": "https://plus.unsplash.com/premium_photo-1706552574221-4a0a64addcbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am91cm5hbGxpbmd8ZW58MHx8MHx8fDA%3D"
     },
     {
       "id": "43",
       "title": "Deep Breathing Exercise",
       "description": "Practice deep breathing techniques to manage stress and anxiety.",
-      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMniz9-ZOcSyPAVjwIqZhbl4LjLLabnlnOEA&s"
+      "img_url": "https://media.istockphoto.com/id/1176660377/photo/young-woman-doing-breathing-exercise.webp?a=1&b=1&s=612x612&w=0&k=20&c=_H4EfWtwHerQI53cq-gRgl6rKf_pY2eqI1YqjSBaexg="
     },
     {
       "id": "44",
       "title": "Distraction Technique",
       "description": "Engage in an activity like reading or solving a puzzle to divert attention from compulsions.",
-      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMniz9-ZOcSyPAVjwIqZhbl4LjLLabnlnOEA&s"
+      "img_url": "https://images.unsplash.com/photo-1553729784-e91953dec042?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
     }
   ],
   "Autism Spectrum Disorder (ASD)":
@@ -420,61 +366,61 @@ const activities = {
         "id": "50",
         "title": "Sensory Play",
         "description": "Engage in activities like playing with textured objects, water beads, or kinetic sand to improve sensory processing.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://media.istockphoto.com/id/1365116579/photo/womens-hands-press-on-a-silicone-rainbow-antistress-toy-in-the-shape-of-a-heart-and-other.webp?a=1&b=1&s=612x612&w=0&k=20&c=nlc1tavSyG1YgpYNuKoXOg1B3DEAPTNOAFyfvGPoFro="
       },
       {
         "id": "51",
         "title": "Social Stories",
         "description": "Read or create social stories to help understand different social situations and responses.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1647529734891-b1d1d2b93bd3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29jaWFsJTIwc3Rvcmllc3xlbnwwfHwwfHx8MA%3D%3D"
       },
       {
         "id": "52",
         "title": "Emotion Recognition Game",
         "description": "Use flashcards or apps to recognize and express different emotions effectively.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://plus.unsplash.com/premium_photo-1739107848676-46d472e4a1f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW1vdGlvbiUyMHJlY29nbml0aW9uJTIwZ2FtZXxlbnwwfHwwfHx8MA%3D%3D"
       },
       {
         "id": "53",
         "title": "Physical Activities",
         "description": "Participate in activities like yoga, jumping on a trampoline, or swimming to improve motor skills and coordination.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1612985838143-47ffc9b76532?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhbXBvbGluZXxlbnwwfHwwfHx8MA%3D%3D"
       },
       {
         "id": "54",
         "title": "Visual Schedule",
         "description": "Use a visual schedule with pictures or symbols to structure daily routines and reduce anxiety.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1676276375900-dd41f828c985?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VmlzdWFsJTIwU2NoZWR1bGUlNUN8ZW58MHx8MHx8fDA%3D"
       },
       {
         "id": "55",
         "title": "Music Therapy",
         "description": "Listen to calming music or play simple instruments to enhance focus and emotional regulation.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWMlMjB0aGVyYXB5fGVufDB8fDB8fHww"
       },
       {
         "id": "56",
         "title": "Art Therapy",
         "description": "Use drawing, painting, or coloring to express emotions and develop creativity.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://plus.unsplash.com/premium_photo-1681494294358-a48f57c7e4f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0JTIwdGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D"
       },
       {
         "id": "57",
         "title": "Turn-Taking Games",
         "description": "Play board games or interactive activities that encourage patience and social skills.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1629760946220-5693ee4c46ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9hcmQlMjBnYW1lc3xlbnwwfHwwfHx8MA%3D%3D"
       },
       {
         "id": "58",
         "title": "Storytelling and Role-Playing",
         "description": "Engage in storytelling or role-playing to improve communication and imaginative skills.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://plus.unsplash.com/premium_photo-1664268415647-fc5f53e8d0b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHN0b3J5dGVsbGluZyUyMGFuZCUyMHJvbGUlMjBwbGF5aW5nfGVufDB8fDB8fHww"
       },
       {
         "id": "59",
         "title": "Handwriting and Fine Motor Exercises",
         "description": "Practice tracing letters, cutting paper, or using tweezers to enhance fine motor skills.",
-        "img_url": "https://www.dynseo.com/wp-content/uploads/2022/01/Icone-site-logo-shop-couleurs-bleu-vert--400x250.png"
+        "img_url": "https://images.unsplash.com/photo-1710447503692-8364152e431c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fEhhbmR3cml0aW5nJTIwYW5kJTIwRmluZSUyME1vdG9yJTIwRXhlcmNpc2VzfGVufDB8fDB8fHww"
       }
     ]
 

@@ -1,5 +1,5 @@
 import './App.css'
-import {UserProfile, Footer, Navbar, Layout} from './components';
+import {UserProfile, Footer, Navbar} from './components';
 import Blogs from './pages/Blogs';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
@@ -11,7 +11,8 @@ import {
   Contact,
   Welcome,
   Dashboard,
-  Diagnose
+  Diagnose,
+  ReportViewer,
 } from './pages';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/diagnose" element={<Diagnose />} />
         <Route path="/exercise" element={<Exercise />} />
         <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/report/:reportId" element={<ReportViewer />} />
       </Route>
     </Routes>
     <Footer />

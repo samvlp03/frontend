@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import apiServices from "../services/apiServices";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom"; // <-- for redirection
 
 const Dashboard = () => {
   const { user } = useAuth();
   const [reports, setReports] = useState([]);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchReports = async () => {
       setLoading(true);
       try {
-        // Pass user ID as query parameter
         const response = await apiServices.getReports({ params: { user_id: user.id } });
         setReports(response.data);
       } catch (error) {
@@ -26,7 +27,7 @@ const Dashboard = () => {
     if (user?.id) {
       fetchReports();
     }
-  }, [user]); // Added user to dependency array
+  }, [user]);
 
   const handleDownload = async (reportId) => {
     try {
@@ -38,12 +39,15 @@ const Dashboard = () => {
       document.body.appendChild(link);
       link.click();
       link.remove();
-      // Revoke the object URL to avoid memory leaks
       window.URL.revokeObjectURL(url);
     } catch (error) {
       console.error("Error downloading report:", error);
       toast.error("Failed to download the report.");
     }
+  };
+
+  const handleView = (reportId) => {
+    navigate(`/report/${reportId}`);
   };
 
   return (
@@ -66,13 +70,21 @@ const Dashboard = () => {
                     Created: {new Date(report.created_at).toLocaleString()}
                   </p>
                 </div>
-                <button
-                  onClick={() => handleDownload(report.id)}
-                  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
-                  disabled={loading}
-                >
-                  {loading ? "Processing..." : "Download PDF"}
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => handleView(report.id)}
+                    className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors"
+                  >
+                    View Report
+                  </button>
+                  <button
+                    onClick={() => handleDownload(report.id)}
+                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+                    disabled={loading}
+                  >
+                    {loading ? "Processing..." : "Download Report"}
+                  </button>
+                </div>
               </li>
             ))}
           </ul>

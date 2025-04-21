@@ -26,6 +26,8 @@ const apiServices = {
   getReports: (config) => api.get('/user-reports/', config),
   getReport: (id) => api.get(`/reports/${id}/`),
   downloadReport: (id) => api.get(`/reports/${id}/download/`, { responseType: 'blob' }),
+  getUserReportById: (reportId, userId) =>
+    api.get("/user-reports/", { params: { user_id: userId, id: reportId } }),
 
   // Users
   getUser: (id) => api.get(`/users/${id}/`),
