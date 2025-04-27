@@ -109,7 +109,7 @@ const ActivityItem = ({ activityProp }) => {
           {!isCompleted ? (
             <button
               onClick={handleMarkCompleted}
-              className='p-2 bg-gradient-to-r from-[#7b3476] via-[#36247e] to-[#3d1571] text-white text-sm px-3 py-1 rounded shadow-md transition-all duration-300 ease-in-out hover:bg-[#4b2a6d] cursor-pointer'
+              className='p-2 bg-gradient-to-r from-[#7b3476] via-[#36247e] to-[#3d1571] text-white text-sm px-3 py-1 rounded shadow-md transition-all duration-300 ease-in-out hover:from-black hover:via-black hover:to-black cursor-pointer'
             >
               Mark as Completed
             </button>

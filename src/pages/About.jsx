@@ -6,25 +6,25 @@ export default function About() {
       id: "1",
       name: "Deepak Dutt",
       role: "Full Stack Developer",
-      img: "https://avatarfiles.alphacoders.com/222/222663.jpg",
+      img: "./deepak.jpg"
     },
     {
       id: "2",
       name: "Samarth Vohra",
       role: "ML Engineer",
-      img: "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "samarth.jpg",
     },
     {
       id: "3",
       name: "Richa Anand",
       role: "Full Stack Developer",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLkDSdpBEN3tksgeiC6FtBtoc1r838wqyeew&s",
+      img: "richa.jpg",
     },
     {
       id: "4",
       name: "Swati Saxena",
       role: "UI/UX Designer",
-      img: "https://via.placeholder.com/150",
+      img: "swati.jpg",
     },
   ];
 
